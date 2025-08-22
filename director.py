@@ -71,6 +71,6 @@ def generate_scene_script(text_input):
 # --- EXECUTION ---
 if __name__ == "__main__":
     # This is the sample text we want to turn into a 3D world
-    sample_text = "Simple Methane(CH4) Molecule with one Carbon atom and four Hydrogen atoms. The Carbon atom is at the center, and the Hydrogen atoms are positioned around it in a tetrahedral arrangement."
+    sample_text = "Simple Water Molecule with Oxygen atom and Hydrogen atoms. "
     
     generate_scene_script(sample_text)
