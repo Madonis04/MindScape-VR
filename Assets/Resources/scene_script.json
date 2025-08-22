@@ -1,52 +1,12 @@
 {
   "scene_objects": [
     {
-      "name": "Sun",
-      "asset_id": "Sun",
+      "name": "Central_Carbon",
+      "asset_id": "CarbonAtom",
       "position": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        10.0,
-        10.0,
-        10.0
-      ],
-      "color": [
-        1.0,
-        0.8,
-        0.0,
-        1.0
-      ]
-    },
-    {
-      "name": "Inner Planet",
-      "asset_id": "Mercury",
-      "position": [
-        15.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        0.8,
-        0.8,
-        0.8
-      ],
-      "color": [
-        0.6,
-        0.6,
-        0.6,
-        1.0
-      ]
-    },
-    {
-      "name": "Terrestrial Planet",
-      "asset_id": "Earth",
-      "position": [
-        25.0,
-        0.0,
-        0.0
+        0,
+        0,
+        0
       ],
       "scale": [
         1.2,
@@ -55,49 +15,89 @@
       ],
       "color": [
         0.2,
-        0.4,
-        0.8,
-        1.0
-      ]
-    },
-    {
-      "name": "Outer Planet",
-      "asset_id": "Mars",
-      "position": [
-        -35.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "color": [
-        0.9,
-        0.4,
         0.2,
-        1.0
+        0.2,
+        1
       ]
     },
     {
-      "name": "Gas Giant",
-      "asset_id": "Jupiter",
+      "name": "Hydrogen_1",
+      "asset_id": "HydrogenAtom",
       "position": [
-        0.0,
-        0.0,
-        50.0
+        0.8,
+        0.8,
+        0.8
       ],
       "scale": [
-        3.0,
-        3.0,
-        3.0
+        0.7,
+        0.7,
+        0.7
       ],
       "color": [
         0.9,
+        0.9,
+        0.9,
+        1
+      ]
+    },
+    {
+      "name": "Hydrogen_2",
+      "asset_id": "HydrogenAtom",
+      "position": [
+        0.8,
+        -0.8,
+        -0.8
+      ],
+      "scale": [
         0.7,
-        0.4,
-        1.0
+        0.7,
+        0.7
+      ],
+      "color": [
+        0.9,
+        0.9,
+        0.9,
+        1
+      ]
+    },
+    {
+      "name": "Hydrogen_3",
+      "asset_id": "HydrogenAtom",
+      "position": [
+        -0.8,
+        0.8,
+        -0.8
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "color": [
+        0.9,
+        0.9,
+        0.9,
+        1
+      ]
+    },
+    {
+      "name": "Hydrogen_4",
+      "asset_id": "HydrogenAtom",
+      "position": [
+        -0.8,
+        -0.8,
+        0.8
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "color": [
+        0.9,
+        0.9,
+        0.9,
+        1
       ]
     }
   ]

@@ -23,10 +23,13 @@ except Exception as e:
 PROMPT = """
 You are a creative director for a Unity 3D game engine. Your task is to read a descriptive text and convert it into a structured JSON object.
 
-Identify the key objects in the text. For each atom in a molecule, provide a 'name', a suggested 'asset_id', a 'position' [x, y, z] based on realistic molecular geometry (e.g., tetrahedral angles for carbon atoms, typical bond lengths ~1.5 units), a 'scale' [x, y, z], and a 'color' as an RGBA array [r, g, b, a] with values from 0.0 to 1.0.
+Identify the key objects in the text. For each object, provide a 'name', an 'asset_id', a 'position' [x, y, z], a 'scale' [x, y, z], and a 'color' as an RGBA array [r, g, b, a].
 
-CRITICAL: The final output must be a single JSON object with one key: "scene_objects", which contains an array of the identified objects.
-The structure must be: { "scene_objects": [ ... ] }
+IMPORTANT: You must choose an 'asset_id' from the following exact list of available prefabs. Do not invent any other names.
+Available Prefabs: ['Bond', 'CarbonAtom', 'Cube', 'Cylinder', 'earth', 'HydrogenAtom', 'Jupiter', 'Mars', 'Mercury', 'Neptune', 'OxygenAtom', 'Plane', 'Saturn', 'Sphere', 'Sun', 'Uranus', 'Venus']
+Choose the most appropriate prefab from this list for each object you identify.
+
+CRITICAL: The final output must be a single JSON object with one key: "scene_objects", which contains an array of the identified objects. The structure must be: { "scene_objects": [ ... ] }
 
 Respond ONLY with the raw JSON object. Do not include any other text.
 """
@@ -68,6 +71,6 @@ def generate_scene_script(text_input):
 # --- EXECUTION ---
 if __name__ == "__main__":
     # This is the sample text we want to turn into a 3D world
-    sample_text = "Create a 3D Model of Solar System with a central Sun and orbiting planets."
+    sample_text = "Simple Methane(CH4) Molecule with one Carbon atom and four Hydrogen atoms. The Carbon atom is at the center, and the Hydrogen atoms are positioned around it in a tetrahedral arrangement."
     
     generate_scene_script(sample_text)
